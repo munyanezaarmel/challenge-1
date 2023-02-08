@@ -8,7 +8,8 @@ const Body = () => (
     <img src={left} className="body__left-image" alt="Left Image" />
     </div>
     <img src={right} className="body__right-image" alt="Right Image" />
-    <span className="body__paragraph-big">Lorem ipsum dolor sit amet.</span>
+    <span className="body__paragraph-big">Lorem ipsum </span>
+    <p className="body__paragraph-min-big">dolor sit amet.</p>
       <span className="body__paragraph-small">Lorem ipsum dolor sit amet, consetetur.</span>
 </div>
 );
