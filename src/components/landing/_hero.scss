@@ -1,0 +1,124 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+	color: rgba(219,219,219,1);
+}
+#active{
+    border-bottom: 5px solid white;
+}
+.app-container{
+    background: url("/challenge-1/public/images/background.png");
+   min-width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+ 
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.logo{
+ width: 31.43px;
+height: 30px;
+
+
+}
+
+.navbar-left{
+    display: flex;
+    gap:pxTovw(569);
+    align-items: center;
+}
+.nav-links{
+  display: flex;
+  gap:46px;
+  width: 530px;
+height: 45px;  
+}
+.single{
+        font-family: Poppins;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 17px;
+        letter-spacing: 1.69px;
+}
+
+  
+.paragraph-body{
+ width: 494px;
+height: 114px;
+font-family: Poppins;
+font-weight: 300;
+font-size: 16px;
+line-height: 20.8px;
+text-align: left;
+color: #dbdbdb;
+}
+.body-images{
+    display: flex;
+    justify-content: space-between;
+}
+.right{
+    height: 300px;  
+}
+.right-container{
+    height: 300px;
+       width: 300px; 
+       overflow: hidden;
+}
+.left{
+    height: 300px;
+    
+}
+.left-container{
+    height: 300px;
+    width: 300px; 
+    overflow: hidden; 
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 155px;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    gap: 175px;
+}
+ 
+  
+  .icon {
+    position: relative;
+  }
+ .paragraph-2-title{
+    font-family:"open sans";
+    font-weight:600;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+    font-size:16px;
+ }
+ .paragraph-2-sub{
+    font-family:"sofia-pro";
+    font-size:82px;
+    font-weight:bold;
+
+ }
+ @media (max-width: 600px) {
+    .nav-links {
+      display: none;
+    }
+}
