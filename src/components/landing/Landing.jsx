@@ -22,7 +22,7 @@ export default function Landing() {
 
 </div>
        </div>
-       <hr/>
+       <hr className='horizontal-line'/>
        <div className="body">
         <div className="paragraph">
             <div className="paragraph-body">
