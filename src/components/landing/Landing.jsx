@@ -6,7 +6,7 @@ export default function Landing() {
     <div className="hero">
        <div className="navbar">
 <div className="logo">
-    <img src="../../../public/images/rice.png" alt="logo image" />
+    <img src="../../../images/rice.png" alt="logo image" />
 </div>
 <div className="navbar-left">
 <div className="nav-links">
@@ -18,7 +18,7 @@ export default function Landing() {
 </div>
 </div>
 <div className="icon">
-    <img src="../../../public/images/icon.svg" alt="nav-icon"/>
+    <img src="../../../images/icon.svg" alt="nav-icon"/>
 
 </div>
        </div>
@@ -31,10 +31,10 @@ export default function Landing() {
         </div>
         <div className="body-images">
             <div className="left-container">
-            <img src="../../../public/images/left.png" alt="left image" className='left' />
+            <img src="../../../images/left.png" alt="left image" className='left' />
             </div>
             <div className="right-container">
-            <img src="../../../public/images/right.png" alt="right image" className='right' />
+            <img src="../../../images/right.png" alt="right image" className='right' />
             </div>
         </div>
         <div className="paragraph-2">
@@ -48,14 +48,14 @@ export default function Landing() {
        </div>
        <div className="footer">
         <div className="progress-bar">
-<img src="../../../public/images/progress.svg" alt="progress bar" />
+<img src="../../../images/progress.svg" alt="progress bar" />
         </div>
         <div className="icons">
             <div className="arrows-icon">
-<img src="../../../public/images/arrows.svg" alt="arrows-icon" />
+<img src="../../../images/arrows.svg" alt="arrows-icon" />
             </div>
             <div className="social-media-icons">
-                <img src="../../../public/images/icons.svg" alt="social-media-icons" />
+                <img src="../../../images/icons.svg" alt="social-media-icons" />
             </div>
         </div>
        </div>
