@@ -36,9 +36,9 @@
     background: transparent;
     border: 1px solid #fff;
     opacity: 0.66;
-    margin-left:2.60416666667%;
-    margin-right:2.60416666667%;
- margin-top: -26px;
+    margin-left:14px;
+    margin-right:14px;
+
 }
 .logo{
  width: 31.43px;
@@ -170,16 +170,16 @@ margin-top:2.60416666667%;
 
     }
     .paragraph-body{
-        width: 268px;
-        height: 85px;
+        max-width: 268px;
         font-family: Poppins;
         font-weight: 300;
         font-size: 10px;
         line-height: 13px;
         text-align: left;
-        color: #dbdbdb;
-        
+
+        color: #dbdbdb; 
     }
+
     .right-container{
         width: 205.26px;
 height: 132px;
@@ -202,5 +202,35 @@ height: 132px;
         height: 132px; 
         margin-left:-2.17708333333%;
     }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        height: 78px;
+    }
+    .logo{
+        width: 31.43px;
+       margin-left:14px;
+       height: 30px;
+       margin-top:15px;
+       width: 31.43px;
+       
+       }
+       .icon{
+           margin-top:15px;
+           margin-right:14px;
+       }
+       .horizontal-line{
+        width: 389px;
+        height: 0px;
+        background: transparent;
+        border: 1px solid #fff;
+        opacity: 0.66;
+        margin-left:2.60416666667%;
+        margin-right:2.60416666667%;
+        margin-top: -26px;
+        width: 384px;
+    }
+
     
 }
