@@ -13,10 +13,10 @@
 }
 .app-container{
     background: url("/challenge-1/images/background.png");
-   width: 1920px;
-  height: 1080px;
-//     min-width: 100vw;
-// min-height: 100vh;
+//    width: pxToEm(1920);
+//   height: pxToEm(1080);
+    min-width: 100vw;
+min-height: 100vh;
   opacity: 1;
   position: relative;
   overflow: hidden;
@@ -34,7 +34,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    height: 95px;
+    height: pxToEm(95);
 }
 .horizontal-line{
     width: 1820px;
@@ -127,7 +127,7 @@ margin-top:2.60416666667%;
     margin-top:3.7962962963%;
   margin-left:-2.17708333333%;
   max-height: 33.6981481481%;
-  margin-bottom: 49px;
+  margin-bottom: pxToEm(49);
 
 
 }
