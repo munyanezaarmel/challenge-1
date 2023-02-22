@@ -1,5 +1,6 @@
 @import "../../sass/mixins";
 @import "../../sass/variables";
+@import "../../sass/breakpoints";
 *{
     padding:0;
     margin: 0;
@@ -8,6 +9,7 @@
 }
 #active{
     border-bottom: 5px solid $white;
+    
 }
 .app-container{
     background: url("/challenge-1/images/background.png");
@@ -27,7 +29,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
 }
 .navbar{
     display: flex;
@@ -128,6 +129,7 @@ margin-top:2.60416666667%;
   max-height: 33.6981481481%;
   margin-bottom: 49px;
 
+
 }
    
 // }
@@ -144,7 +146,6 @@ margin-top:2.60416666667%;
     gap:pxToVw(175);
 }
  
-
  .paragraph-2-title{
     font-family:"open sans";
     max-width: 25.7291666667%;
