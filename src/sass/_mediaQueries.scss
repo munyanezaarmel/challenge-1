@@ -1,21 +1,22 @@
+@import "./mixins";
 @mixin responsive($breakpoints){
     @if $breakpoints==phone{
-        @media only screen and (max-width:600px){
+        @media only screen and (max-width:pxToEm(600)){
             @content
         }
     }
     @if $breakpoints==tab-port{
-        @media only screen and (max-width:900px){
+        @media only screen and (max-width:pxToEm(900)){
             @content
         }
     }
     @if $breakpoints==tab-land{
-        @media only screen and (max-width:1400px){
+        @media only screen and (max-width:pxToEm(1200)){
             @content
         }
     }
     @if $breakpoints==big-desk{
-        @media only screen and (min-width:1800px){
+        @media only screen and (min-width:pxToEm(1800)){
             @content
         }
     }
