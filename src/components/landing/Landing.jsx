@@ -29,14 +29,28 @@ export default function Landing() {
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit 
             </div>
         </div>
+   
+        {/* 
+            
+       
+           
+        </div> */}
         <div className="body-images">
+        <div className="left-text-image">
+            <div className="text-left" id='right-text-id'>02</div>
             <div className="left-container">
             <img src="../../../images/left.png" alt="left image" className='left' />
             </div>
-            <div className="right-container">
+        </div>
+        <div className="text-right-image">
+        <div className="text-right">02</div>
+                <div className="right-image">
             <img src="../../../images/right.png" alt="right image" className='right' />
             </div>
         </div>
+        </div>
+
+ 
         <div className="paragraph-2">
             <div className="paragraph-2-title">
             Lorem ipsum dolor sit amet, consetetur.
