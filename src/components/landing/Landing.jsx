@@ -63,7 +63,7 @@ export default function Landing() {
             </div>
           </div>
         </div>
-
+        
         <div className="paragraph-2">
           <div className="paragraph-2-title">
             Lorem ipsum dolor sit amet, consetetur.

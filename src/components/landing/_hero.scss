@@ -25,7 +25,21 @@
   background-size: cover;
   overflow: hidden;
   @include responsive(phone){
-      background: url("/challenge-1/public/images/background-phone.png");
+      background: url("/challenge-1/images/background-phone.png");
+        min-width: 100vw;
+  min-height: 100vh;
+  // height: 100vh;
+  // width: 100vw;
+  opacity: 1;
+  position: relative;
+  //   overflow: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  }
+  @include responsive(ipad-only){
+     background: url("/challenge-1/images/background-tablet.png");
         min-width: 100vw;
   min-height: 100vh;
   // height: 100vh;
@@ -76,11 +90,15 @@
       margin-top:350px;
        margin-right: -108px;
   }
+  @include responsive(ipad-only){
+    margin-right: -138px;
+  }
 }
 .text-right-image {
   display: flex;
-  //   border: 10px white solid;
+
   align-items: center;
+
 }
 .text-left {
   font-size: 400px;
@@ -107,9 +125,7 @@
   margin-right: 2.60416666667%;
   width: auto;
   height: 20px;
-  // @include responsive(phone){
-  //     display: none;
-  // }
+ 
 }
 
 .navbar-left {
@@ -177,9 +193,11 @@ color: #dbdbdb;
   @include responsive(phone){
       width: 120.5vw;
   }
-  @include responsive(tab-port){
-         gap: 8500px;
+  @include responsive(ipad-only){
+width: 150.5vw;
+  
   }
+
 }
 .right {
   width: 100%;
@@ -221,10 +239,16 @@ color: #dbdbdb;
      transform: scale(0.5);
 
   }
+  @include responsive(ipad-only){
+     transform: scale(0.5);
+  }
 }
 .arrows-icon{
     @include responsive(phone){
     transform: scale(0.7);
+}
+@include responsive(ipad-only){
+   transform: scale(0.6);
 }
 }
 
@@ -240,6 +264,11 @@ color: #dbdbdb;
   width: auto;
   @include responsive(phone){
       margin-left: -50.17708333333%;
+  }
+  @include responsive(ipad-only){
+   margin-bottom: 500px;
+         margin-left: -70.17708333333%;
+
   }
   //   height: 260.94px;
 }
@@ -262,6 +291,9 @@ color: #dbdbdb;
     flex-direction: column;
     padding: 20px;
 
+  }
+  @include responsive(ipad-only){
+    margin-top:57px;
   }
 }
 .icons {
@@ -299,6 +331,7 @@ line-height: 15.6px;
 text-align: left;
 color: #dbdbdb;
   }
+
 }
 .paragraph-2-sub {
   font-family: $sf-pro-heavy;
@@ -316,6 +349,14 @@ text-align: left;
 color: #dbdbdb;
 
   }
+  @include responsive(ipad-only){
+font-size: 50px;
+line-height: 106.6px;
+text-align: left;
+color: #dbdbdb;
+
+
+  }
 }
 .numbers {
   display: flex;
@@ -324,6 +365,9 @@ color: #dbdbdb;
   column-gap: pxToEm(31);
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: pxToEm(16);
+  @include responsive(ipad-only){
+    margin-left:100px;
+  }
 }
 .active-number {
   font-size: pxToEm(24);
@@ -338,10 +382,14 @@ color: #dbdbdb;
   background-color: rgba(255, 255, 255, 0.219);
   height: 1px;
   width: 694px;
+  
 }
   .lines {
     display: flex;
     width: 47vw;
+    @include responsive(ipad-only){
+      width: 35vw;
+    }
   }
   
 @media (max-width: 600px) {
