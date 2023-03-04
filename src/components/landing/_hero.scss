@@ -13,51 +13,29 @@
 }
 .app-container {
   background: url("/challenge-1/images/background.png");
-  min-width: 100vw;
-  min-height: 100vh;
-  // height: 100vh;
-  // width: 100vw;
-  opacity: 1;
+
   position: relative;
-  //   overflow: auto;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  overflow: hidden;
-  @include responsive(phone){
-      background: url("/challenge-1/images/background-phone.png");
-        min-width: 100vw;
-  min-height: 100vh;
-  // height: 100vh;
-  // width: 100vw;
-  opacity: 1;
-  position: relative;
-  //   overflow: auto;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  overflow: hidden;
+  height: 100vh;
+    max-height: 100vh;
+    background-position: auto 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: unset;
+    overflow-x: hidden;
+  @include responsive(phone) {
+    background: url("/challenge-1/images/background-phone.png");
   }
-  @include responsive(ipad-only){
-     background: url("/challenge-1/images/background-tablet.png");
-        min-width: 100vw;
-  min-height: 100vh;
-  // height: 100vh;
-  // width: 100vw;
-  opacity: 1;
-  position: relative;
-  //   overflow: auto;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  overflow: hidden;
+  @include responsive(ipad-only) {
+
   }
-  
 }
 .hero {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  @include responsive(ipad-only) {
+    height: 100vh;
+  }
 }
 
 .navbar {
@@ -85,21 +63,16 @@
   // height: 349.36px;
   font-family: Arial, Helvetica, sans-serif;
   margin-right: -195px;
-  @include responsive(phone){
-      font-size: 190px;
-      margin-top:350px;
-       margin-right: -108px;
+  @include responsive(phone) {
+    font-size: 190px;
+    margin-top: 0;
+    margin-right: -108px;
   }
-  @include responsive(ipad-only){
-    margin-right: -138px;
+  @include responsive(ipad-only) {
+    margin-right: -200px;
   }
 }
-.text-right-image {
-  display: flex;
 
-  align-items: center;
-
-}
 .text-left {
   font-size: 400px;
   font-weight: bold;
@@ -125,7 +98,6 @@
   margin-right: 2.60416666667%;
   width: auto;
   height: 20px;
- 
 }
 
 .navbar-left {
@@ -161,52 +133,75 @@
   color: #dbdbdb;
   margin-left: 2.60416666667%;
   margin-top: 2.60416666667%;
-  @include responsive(phone){
+  @include responsive(phone) {
     max-width: 268px;
-height: 85px;
-font-family: Poppins;
-font-weight: 300;
-font-size: 10px;
-line-height: 1.3;
-text-align: left;
-color: #dbdbdb;
-
+    height: 85px;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 1.3;
+    text-align: left;
+    color: #dbdbdb;
   }
-  @include responsive(tab-port){
+  @include responsive(tab-port) {
     width: 268px;
-height: 131px;
-font-family: Poppins;
-font-weight: 300;
-font-size: 12px;
-line-height: 15.6px;
-text-align: left;
-color: #dbdbdb;
-
+    height: 131px;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15.6px;
+    text-align: left;
+    color: #dbdbdb;
   }
 }
 .body-images {
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  //    border: 10px white solid;
-  width: 109.5vw;
-  @include responsive(phone){
-      width: 120.5vw;
-  }
-  @include responsive(ipad-only){
-width: 150.5vw;
-  
+
+  width: 100vw;
+
+  .text-right-image {
+    display: flex;
+    align-items: center;
+    margin-right: -100px;
+    transform: scale(1);
   }
 
+  @include responsive(phone) {
+    width: 100vw;
+    margin-top: 35vh;
+    //border: 10px white solid;
+    height: 20vh;
+
+    .text-right-image {
+      margin-right: -100px;
+      transform: scale(0.9);
+    }
+  }
+  @include responsive(ipad-only) {
+    width: 100vw;
+    height: 40vh;
+    margin-top: 4em;
+
+    .text-right-image {
+      display: flex;
+      align-items: center;
+      margin-right: -300px;
+      transform: scale(0.55);
+    }
+  }
 }
 .right {
   width: 100%;
   height: auto;
   // padding-right:-29.60416666667%;
-  margin-right: -0.60416666667%;
-  @include responsive(phone){
+  @include responsive(phone) {
     transform: scale(0.9);
-    margin-top:285px;
+    margin-top: 0;
+  }
+  @include responsive(ipad-only) {
   }
 
   //
@@ -214,6 +209,12 @@ width: 150.5vw;
 .right-image {
   height: 404px;
   width: auto;
+  @include responsive(phone) {
+    height: auto;
+  }
+  @include responsive(ipad-only) {
+    margin-right: 105px;
+  }
 }
 
 .progress-bar {
@@ -227,29 +228,30 @@ width: 150.5vw;
   width: 100%;
   transform: scale(0.7);
   height: auto;
-  @include responsive(phone){
-      transform: scale(0.5);
-      margin-top:350px;
+  @include responsive(phone) {
+    transform: scale(0.5);
+    margin-top: 0;
   }
 }
 
 .social-media-icons {
   margin-right: 36px;
-  @include responsive(phone){
-     transform: scale(0.5);
-
+  @include responsive(phone) {
+    transform: scale(0.5);
+    margin-right: 20em;
   }
-  @include responsive(ipad-only){
-     transform: scale(0.5);
+  @include responsive(ipad-only) {
+    transform: scale(0.5);
   }
 }
-.arrows-icon{
-    @include responsive(phone){
+.arrows-icon {
+  @include responsive(phone) {
     transform: scale(0.7);
-}
-@include responsive(ipad-only){
-   transform: scale(0.6);
-}
+    margin-left:20em;
+  }
+  @include responsive(ipad-only) {
+    transform: scale(0.6);
+  }
 }
 
 // .left-text-id{
@@ -262,13 +264,13 @@ width: 150.5vw;
   //   max-height: 33.6981481481%;
   //   margin-bottom: pxToEm(49);
   width: auto;
-  @include responsive(phone){
-      margin-left: -50.17708333333%;
+  @include responsive(phone) {
+    margin-left: -50.17708333333%;
   }
-  @include responsive(ipad-only){
-   margin-bottom: 500px;
-         margin-left: -70.17708333333%;
-
+  @include responsive(ipad-only) {
+    // margin-bottom: 500px;
+    margin-left: -70.17708333333%;
+    transform: scale(0.55);
   }
   //   height: 260.94px;
 }
@@ -286,27 +288,25 @@ width: 150.5vw;
   display: flex;
   justify-content: space-around;
   gap: pxToVw(155);
-  @include responsive(phone){
+
+  @include responsive(phone) {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-
+    padding: 0;
+    gap: 0;
   }
-  @include responsive(ipad-only){
-    margin-top:57px;
+  @include responsive(ipad-only) {
+    margin-top: -5em;
   }
 }
 .icons {
   display: flex;
   justify-content: space-around;
   gap: pxToVw(175);
-  @include responsive(phone){
-display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-  
+  @include responsive(phone) {
+    justify-content: center;
+    align-items: center;
+    gap: 0;
   }
 }
 
@@ -322,17 +322,24 @@ display: flex;
   // line-height: 57px;
   text-align: left;
   color: #dbdbdb;
-  @include responsive(phone){
-font-family: "Open Sans";
-font-weight: 600;
-font-size: 10px;
-letter-spacing: 0.17em;
-line-height: 15.6px;
-text-align: left;
-color: #dbdbdb;
+  @include responsive(phone) {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.17em;
+    line-height: 15.6px;
+    text-align: left;
+    color: #dbdbdb;
   }
-
 }
+
+.paragraph-2 {
+  @include responsive(ipad-only) {
+    margin-top: 1em;
+    transform: scale(0.7);
+  }
+}
+
 .paragraph-2-sub {
   font-family: $sf-pro-heavy;
   text-transform: capitalize;
@@ -341,21 +348,19 @@ color: #dbdbdb;
   font-weight: bold;
   margin-left: 2.60416666667%;
   padding-bottom: 40px;
-  @include responsive(phone){
-  font-family: $sf-pro-heavy;
- font-weight: bold;
-font-size: 50px;
-text-align: left;
-color: #dbdbdb;
-
+  @include responsive(phone) {
+    font-family: $sf-pro-heavy;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: left;
+    color: #dbdbdb;
+    padding-bottom: 0;
   }
-  @include responsive(ipad-only){
-font-size: 50px;
-line-height: 106.6px;
-text-align: left;
-color: #dbdbdb;
-
-
+  @include responsive(ipad-only) {
+    font-size: 50px;
+    line-height: 106.6px;
+    text-align: left;
+    color: #dbdbdb;
   }
 }
 .numbers {
@@ -365,8 +370,8 @@ color: #dbdbdb;
   column-gap: pxToEm(31);
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: pxToEm(16);
-  @include responsive(ipad-only){
-    margin-left:100px;
+  @include responsive(ipad-only) {
+    margin-left: 100px;
   }
 }
 .active-number {
@@ -382,16 +387,15 @@ color: #dbdbdb;
   background-color: rgba(255, 255, 255, 0.219);
   height: 1px;
   width: 694px;
-  
 }
-  .lines {
-    display: flex;
-    width: 47vw;
-    @include responsive(ipad-only){
-      width: 35vw;
-    }
+.lines {
+  display: flex;
+  width: 47vw;
+  @include responsive(ipad-only) {
+    width: 35vw;
   }
-  
+}
+
 @media (max-width: 600px) {
   .nav-links {
     display: none;
